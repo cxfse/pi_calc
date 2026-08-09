@@ -7,7 +7,7 @@ This repository contains the implementation and theoretical documentation for a 
 The newly discovered equation is rooted in the imaginary quadratic field $\mathbb{Q}(\sqrt{-427})$, with constants residing in the real quadratic subfield $\mathbb{Q}(\sqrt{61})$:
 
 $$
-\frac{1}{\pi} = \frac{12}{\sqrt{|C_{427}|}} \sum_{n=0}^{\infty} \frac{(-1)^n (6n)!}{(3n)! (n!)^3} \cdot \frac{A + B \cdot n}{C_{427}^n}
+\frac{1}{\pi} = \frac{12}{\sqrt{|C_{427}|}} \sum_{n=0}^{\infty} \frac{(6n)!}{(3n)! (n!)^3} \cdot \frac{A + B \cdot n}{C_{427}^n}
 $$
 
 Where the base $C_{427}$ and the algebraic integer constants $A$ and $B$ reside in the ring $\mathbb{Z}[\sqrt{61}]$:
