@@ -25,6 +25,7 @@ Where the base $C_{427}$ and the algebraic integer constants $A$ and $B$ reside 
 - **[`doc/`](./doc/)**: Contains the academic papers detailing the theoretical foundation.
   - **English Paper**: `Pi_Formula_d427_Paper.pdf`
   - **Chinese Paper**: `Pi_Formula_d427_Paper_cn.pdf`
+  - **Discovery & Proof Paper**: `Pi_d427_Discovery_Proof_Paper.pdf` (Chinese)
 
 ## Highlights
 
