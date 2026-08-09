@@ -1,6 +1,6 @@
-# Pi Computation using d=427 Ramanujan-Type Formula
+# Pi Computation using d=-427 Ramanujan-Type Formula
 
-This repository contains the engineering implementations for the ultra-fast Ramanujan-type series based on the discriminant $d=427$. The formula operates over the algebraic integer ring $\mathbb{Z}[\sqrt{61}]$ and achieves an unprecedented net convergence rate of **24.96 decimal digits per term**.
+This repository contains the engineering implementations for the ultra-fast Ramanujan-type series based on the discriminant $d=-427$. The formula's constants reside in the real quadratic subfield $\mathbb{Q}(\sqrt{61})$ of the associated Hilbert class field, and it achieves an unprecedented net convergence rate of **24.96 decimal digits per term**.
 
 ## Directory Structure
 

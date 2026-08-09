@@ -34,14 +34,14 @@ class Ring61Karatsuba:
     def __radd__(self, other): return self.__add__(other)
 
 # ============================================================
-# d=427 Constants with Karatsuba-optimized Ring61
+# d=-427 Constants with Karatsuba-optimized Ring61
 # ============================================================
 C427K = Ring61Karatsuba(mpz("-7805727756261891959906304000"), mpz("-999421027517377348595712000"))
 A427K = Ring61Karatsuba(mpz("1657145277365"), mpz("212175710912"))
 B427K = Ring61Karatsuba(mpz("107578229802750"), mpz("13773980892672"))
 
 # ============================================================
-# Binary Splitting Algorithm for d=427
+# Binary Splitting Algorithm for d=-427
 # ============================================================
 def bs_427_k(a, b):
     if b - a == 1:
@@ -58,7 +58,7 @@ def bs_427_k(a, b):
     return pam * pmb, qam * qmb, ram * qmb + rmb * pam
 
 def run_benchmark(digits, output_file):
-    print(f"\nBenchmarking {digits:,} decimal digits of Pi for d=427")
+    print(f"\nBenchmarking {digits:,} decimal digits of Pi for d=-427")
     n_427 = int(digits / 24.955) + 1
     print(f"Required Terms: {n_427:,}")
     

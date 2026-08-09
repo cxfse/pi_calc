@@ -1,16 +1,16 @@
-# Pi Calculation via d=427 Ramanujan-Type Formula
+# Pi Calculation via d=-427 Ramanujan-Type Formula
 
-This repository contains the implementation and theoretical documentation for a new hypergeometric series used to compute Pi ($\pi$). Based on the discriminant $d=427$ (class number $h=2$), this formula achieves a theoretical convergence rate of **24.96 digits per term**.
+This repository contains the implementation and theoretical documentation for a new hypergeometric series used to compute Pi ($\pi$). Based on the discriminant $d=-427$ (class number $h=2$), this formula achieves a theoretical convergence rate of **24.96 digits per term**.
 
 ## The Formula
 
-The newly discovered equation operates in the algebraic extension field $\mathbb{Q}(\sqrt{61})$:
+The newly discovered equation is rooted in the imaginary quadratic field $\mathbb{Q}(\sqrt{-427})$, with constants residing in the real quadratic subfield $\mathbb{Q}(\sqrt{61})$:
 
 $$
 \frac{1}{\pi} = \frac{12}{\sqrt{|C_{427}|}} \sum_{n=0}^{\infty} \frac{(-1)^n (6n)!}{(3n)! (n!)^3} \cdot \frac{A + B \cdot n}{C_{427}^n}
 $$
 
-Where the base $C_{427}$ and the algebraic integer constants $A$ and $B$ strictly reside in the ring $\mathbb{Z}[\sqrt{61}]$:
+Where the base $C_{427}$ and the algebraic integer constants $A$ and $B$ reside in the ring $\mathbb{Z}[\sqrt{61}]$:
 
 - **$C_{427}$** $= -(7805727756261891959906304000 + 999421027517377348595712000\sqrt{61})$
 - **$A$** $= 1657145277365 + 212175710912\sqrt{61}$
@@ -28,7 +28,7 @@ Where the base $C_{427}$ and the algebraic integer constants $A$ and $B$ strictl
 
 ## Highlights
 
-- **Theoretical Rate**: Surpasses the Chudnovsky algorithm ($d=163, h=1$, 14.18 digits/term) in theoretical convergence speed.
+- **Theoretical Rate**: Surpasses the Chudnovsky algorithm ($d=-163, h=1$, 14.18 digits/term) in theoretical convergence speed.
 - **Engineering Verification**: Successfully verified up to 100,000,000 digits with exact Bit-Perfect matching against established Pi benchmarks.
 - **Absolute Precision**: Eliminates floating-point Newton iteration in the intermediate steps, relying entirely on exact large integer arithmetic via `gmpy2`.
 
